@@ -7,4 +7,5 @@ Some testing I did for various GEMM Kernels \
 
 #### Some TODOs for me
 - HGEMM w/ 4th gen tensor cores (Hopper + TMA)
+- Make DGEMM better lol
 
