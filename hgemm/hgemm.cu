@@ -94,7 +94,6 @@ __global__ void matmul_v2(const half *A, const half *B, float *C, int M, int N, 
   float dReg[2][2][4] = {0.};
 
   int storeRow = warpID * 4 + laneID / 8;
-  // HINT: The code can be found in one of the readings/references ;)
   int storeCol = laneID % 8 ^ (laneID / 8);
 
   int loadRowA = (laneID % 16) / 2;
@@ -159,7 +158,6 @@ __global__ void matmul_v3(const half *A, const half *B, float *C, int M, int N, 
   float dReg[2][2][4] = {0.};
 
   int storeRow = warpID * 4 + laneID / 8;
-  // HINT: The code can be found in one of the readings/references ;)
   int storeCol = laneID % 8 ^ (laneID / 8);
 
   int loadRowA = (laneID % 16) / 2;
